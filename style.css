@@ -1,0 +1,144 @@
+/* Font Families */
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  .roboto-thin-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  .roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  .roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .roboto-regular-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+/* 
+    Site Color Pallete 
+    https://coolors.co/000e14-00111a-00141f-001824-001b29-002233-00293d-003047-003652-003d5c
+    https://coolors.co/3b4956-34414c-2e3943-273139-212930-1a2026-14181d-0d1013-07080a-000000
+*/
+:root {
+    --rich_black: #07080A;
+    --rich_black2: #0D1013;
+    --rich_black3: #14181D;
+    --rich_black4: #1A2026;
+    --rich_black5: #212930;
+    --prusian_blue: #2E3943;
+    --prusian_blue2: #34414C;
+    --indigo: #006597;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14pt;
+    color: white;
+    background-color: var(--rich_black3);
+}
+hr {
+    color: var(--prusian_blue)
+}
+.container {
+    display: flex;
+    height: 100%;
+}
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    padding: 2rem;
+    background-color: var(--rich_black2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -100%;
+    padding-bottom: 100%;
+}
+.sidebar #profile_pic {
+    width: 100%;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.navbar p {
+    margin: 5px;
+}
+.navbar a {
+    color: #089febdc;
+}
+.navbar a:visited {
+    color: var(--indigo)
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+.content {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--rich_black3);
+}
+.post {
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    padding: .5rem;
+    border-radius: .5rem;
+    background-color: var(--rich_black4);
+    align-items: center;
+    justify-content: center;
+}
+.post .post-content {
+    padding: 20px;
+    flex: 1;
+}
+.post img {
+    display: flex;
+    border-radius: .5rem;
+    margin-left: 1rem;
+    width: 10rem;
+    height: 10rem;
+}
+.post .post-img {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    height: 70%;
+}
+#welcome_header {
+    height: 85px;
+    background-color: var(--rich_black5);
+}
